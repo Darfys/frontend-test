@@ -34,7 +34,7 @@ const styles = {
   }
 }
 
-interface CheckboxProps {
+interface LayerCardProps {
   onClick?: () => void;
   onChange?: (e:React.FormEvent<HTMLInputElement>) => void;
   label?: string;
@@ -43,7 +43,7 @@ interface CheckboxProps {
 const LayerCard = ({
   label,
   ...props
-}: CheckboxProps) => {
+}: LayerCardProps) => {
   
   const {onChange, ...rest} = props
   const [checked, setChecked] = useState(false)
